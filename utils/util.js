@@ -33,10 +33,9 @@ function request(url, data = {}, method = "GET") {
         'X-Litemall-Token': wx.getStorageSync('token')
       },
       success: function(res) {
-
         if (res.statusCode == 200) {
 
-          if (res.code == 200 == 501) {
+          if (res.data.code == 401) {
             // 清除登录相关内容
             try {
               wx.removeStorageSync('userInfo');

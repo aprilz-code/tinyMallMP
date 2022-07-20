@@ -13,7 +13,7 @@ Page({
     goodsList: [],
     categoryId: 0,
     currentSortType: 'default',
-    currentSort: 'add_time',
+    currentSort: 'create_time',
     currentSortOrder: 'desc',
     page: 1,
     limit: 10
@@ -79,7 +79,7 @@ Page({
         this.setData({
           categoryFilter: !this.data.categoryFilter,
           currentSortType: 'category',
-          currentSort: 'add_time',
+          currentSort: 'create_time',
           currentSortOrder: 'desc'
         });
         break;
@@ -101,7 +101,7 @@ Page({
         //综合排序
         this.setData({
           currentSortType: 'default',
-          currentSort: 'add_time',
+          currentSort: 'create_time',
           currentSortOrder: 'desc',
           categoryFilter: false,
           categoryId: 0,

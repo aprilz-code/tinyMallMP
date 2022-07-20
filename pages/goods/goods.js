@@ -217,7 +217,7 @@ Page({
     }).then(function(res) {
       if (res.code === 200) {
         that.setData({
-          relatedGoods: res.data.list,
+          relatedGoods: res.data,
         });
       }
     });

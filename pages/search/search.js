@@ -138,7 +138,7 @@ Page({
         this.setData({
           categoryFilter: !this.data.categoryFilter,
           currentSortType: 'category',
-          currentSort: 'add_time',
+          currentSort: 'create_time',
           currentSortOrder: 'desc'
         });
         break;
