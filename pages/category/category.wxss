@@ -1,6 +1,17 @@
+
 .container {
   background: #f9f9f9;
+  min-height:101vh;
+  /* height: 100%; */
+  width: 100%;
 }
+
+
+.list-scroll-content {
+    height: 100%;
+    width: 100%;
+  }
+
 
 .cate-nav {
   position: fixed;

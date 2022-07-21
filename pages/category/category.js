@@ -8,8 +8,6 @@ Page({
     id: 0,
     currentCategory: {},
     scrollLeft: 0,
-    scrollTop: 0,
-    scrollHeight: 0,
     page: 1,
     limit: 10,
     pages:1, //总页数
@@ -22,14 +20,6 @@ Page({
         id: parseInt(options.id)
       });
     }
-
-    wx.getSystemInfo({
-      success: function(res) {
-        that.setData({
-          scrollHeight: res.windowHeight
-        });
-      }
-    });
 
 
     this.getCategoryInfo();
