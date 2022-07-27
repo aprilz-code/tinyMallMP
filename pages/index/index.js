@@ -108,14 +108,14 @@ Page({
       });
     }
 
-    this.getIndexData();
+   
   },
   onReady: function() {
     // 页面渲染完成
   },
   onShow: function() {
     // 页面显示
-    this.onLoad({});
+    this.getIndexData();
   },
   onHide: function() {
     // 页面隐藏
