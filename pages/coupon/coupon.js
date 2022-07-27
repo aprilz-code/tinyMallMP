@@ -92,7 +92,7 @@ Page({
 
         that.setData({
           scrollTop: 0,
-          couponList: res.data.list,
+          couponList: res.data.records,
           showPage: true,
           count: res.data.total
         });
@@ -114,9 +114,16 @@ Page({
       couponId: couponId
     }, 'POST').then(res => {
       if (res.code === 200) {
+          var that = this
         wx.showToast({
-          title: "领取成功"
-        })
+            title: '领取成功',
+            success:function(){
+              setTimeout(function () {
+                  //要延时执行的代码
+                  that.onLoad()
+                }, 1500) //延迟时间
+            }
+          })
       }
       else {
         util.showErrorToast(res.errmsg);

@@ -21,7 +21,7 @@ Page({
       if (res.code === 200) {
         console.log(res.data);
         that.setData({
-          aftersaleList: that.data.aftersaleList.concat(res.data.list),
+          aftersaleList: that.data.aftersaleList.concat(res.data.records),
           totalPages: res.data.pages
         });
       }

@@ -58,7 +58,6 @@ Page({
     });
   },
   onLoad: function(options) {
-
     // 页面初始化 options为页面跳转所带来的参数
     if (options.scene) {
       //这个scene的值存在则证明首页的开启来源于朋友圈分享的图,同时可以通过获取到的goodId的值跳转导航到对应的详情页
@@ -116,6 +115,7 @@ Page({
   },
   onShow: function() {
     // 页面显示
+    this.onLoad({});
   },
   onHide: function() {
     // 页面隐藏
@@ -123,15 +123,28 @@ Page({
   onUnload: function() {
     // 页面关闭
   },
+  onTabItemTap: function(options) {
+    // 页面关闭
+    this.onLoad(options);
+    
+  },
   getCoupon(e) {
     let couponId = e.currentTarget.dataset.index
     util.request(api.CouponReceive, {
       couponId: couponId
     }, 'POST').then(res => {
       if (res.code === 200) {
+        var that = this
         wx.showToast({
-          title: "领取成功"
-        })
+            title: '领取成功',
+            success:function(){
+              setTimeout(function () {
+                  //要延时执行的代码
+                  that.onLoad({})
+                }, 1500) //延迟时间
+            }
+          })
+       
       }
       else{
         util.showErrorToast(res.errmsg);

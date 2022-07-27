@@ -23,7 +23,7 @@ Page({
     }).then(function(res) {
       if (res.code === 200) {
         that.setData({
-          brandList: that.data.brandList.concat(res.data.list),
+          brandList: that.data.brandList.concat(res.data.records),
           totalPages: res.data.pages
         });
       }
