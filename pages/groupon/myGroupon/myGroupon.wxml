@@ -27,7 +27,7 @@
       </view>
       <view class="j">
         <view class="l">团购立减：￥{{item.rules.discount}}</view>
-        <view class="r">参与时间：{{item.groupon.addTime}}</view>
+        <view class="r">参与时间：{{item.groupon.createTime}}</view>
       </view>
       <view class="i">
         <view class="l">团购要求：{{item.rules.discountMember}}人</view>

@@ -2,7 +2,7 @@
   <view class="order-info">
     <view class="item">
       <view class="label">下单时间：</view>
-      <view class="txt">{{orderInfo.addTime}}</view>
+      <view class="txt">{{orderInfo.createTime}}</view>
     </view>
     <view class="item">
       <view class="label">订单编号：</view>

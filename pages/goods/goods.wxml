@@ -67,7 +67,7 @@
             <image src="{{item.avatar}}"></image>
             <text>{{item.nickname}}</text>
           </view>
-          <view class="time">{{item.addTime}}</view>
+          <view class="time">{{item.createTime}}</view>
         </view>
         <view class="content">
           {{item.content}}

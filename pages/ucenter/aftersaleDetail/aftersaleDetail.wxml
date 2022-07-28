@@ -1,7 +1,7 @@
 <view class="container">
   <van-cell-group title="退款明细">
     <van-cell value="{{ statusColumns[aftersale.status] }}" title="售后状态" required/>
-    <van-cell value="{{ aftersale.addTime }}" title="申请时间" required/>
+    <van-cell value="{{ aftersale.createTime }}" title="申请时间" required/>
     <van-cell value="{{ aftersale.aftersaleSn }}" title="服务编号" required/>
     <van-cell value="{{ typeColumns[aftersale.type] }}" title="退款类型" required/>
     <van-cell value="{{ aftersale.reason }}" title="退款原因" required/>

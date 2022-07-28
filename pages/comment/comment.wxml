@@ -14,7 +14,7 @@
           <image src="{{item.userInfo.avatarUrl}}"></image>
           <text>{{item.userInfo.nickname}}</text>
         </view>
-        <view class="time">{{item.addTime}}</view>
+        <view class="time">{{item.createTime}}</view>
       </view>
       <view class="comment">{{item.content}}</view>
       <view class="imgs" wx:if="{{item.picList.length > 0}}">
