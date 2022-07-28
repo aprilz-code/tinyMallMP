@@ -140,7 +140,7 @@ Page({
             success:function(){
               setTimeout(function () {
                   //要延时执行的代码
-                  that.onLoad({})
+                  that.onShow()
                 }, 1500) //延迟时间
             }
           })

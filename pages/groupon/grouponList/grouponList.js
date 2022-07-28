@@ -95,7 +95,7 @@ Page({
 
         that.setData({
           scrollTop: 0,
-          grouponList: res.data.list,
+          grouponList: res.data.records,
           showPage: true,
           count: res.data.total
         });
