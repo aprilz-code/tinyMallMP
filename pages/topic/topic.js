@@ -63,7 +63,7 @@ Page({
 
         that.setData({
           scrollTop: 0,
-          topicList: res.data.list,
+          topicList: res.data.records,
           showPage: true,
           count: res.data.total
         });

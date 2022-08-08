@@ -128,7 +128,7 @@ Page({
         })
       }
       else{
-        util.showErrorToast(res.errmsg);
+        util.showErrorToast(res.message);
       }
     });
   },

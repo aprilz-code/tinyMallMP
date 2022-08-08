@@ -41,7 +41,7 @@ Page({
     }).then(function(res) {
       if (res.code === 200) {
         that.setData({
-          topicList: res.data.list
+          topicList: res.data.records
         });
       }
     });

@@ -546,7 +546,7 @@ Page({
             } catch (e) {}
 
           } else {
-            util.showErrorToast(res.errmsg);
+            util.showErrorToast(res.message);
           }
         });
     }

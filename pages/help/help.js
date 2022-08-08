@@ -98,7 +98,7 @@ Page({
       if (res.code === 200) {
 
         that.setData({
-          issueList: res.data.list,
+          issueList: res.data.records,
           showPage: true,
           count: res.data.total
         });

@@ -29,9 +29,9 @@ Page({
       limit: that.data.limit
     }).then(function(res) {
       if (res.code === 200) {
-        console.log(res.data);
+        // console.log(res.data);
         that.setData({
-          orderList: that.data.orderList.concat(res.data.list),
+          orderList: that.data.orderList.concat(res.data.records),
           totalPages: res.data.pages
         });
       }

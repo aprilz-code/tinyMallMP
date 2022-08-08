@@ -105,7 +105,7 @@ Page({
               });
               util.redirect('/pages/ucenter/order/order');
             } else {
-              util.showErrorToast(res.errmsg);
+              util.showErrorToast(res.message);
             }
           });
         }
@@ -131,7 +131,7 @@ Page({
               });
               util.redirect('/pages/ucenter/order/order');
             } else {
-              util.showErrorToast(res.errmsg);
+              util.showErrorToast(res.message);
             }
           });
         }
@@ -157,7 +157,7 @@ Page({
               });
               util.redirect('/pages/ucenter/order/order');
             } else {
-              util.showErrorToast(res.errmsg);
+              util.showErrorToast(res.message);
             }
           });
         }
@@ -183,7 +183,7 @@ Page({
               });
               util.redirect('/pages/ucenter/order/order');
             } else {
-              util.showErrorToast(res.errmsg);
+              util.showErrorToast(res.message);
             }
           });
         }
