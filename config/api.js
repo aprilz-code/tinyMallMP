@@ -1,12 +1,12 @@
 // 以下是业务服务器API地址
 // 本机开发时使用
-var WxApiRoot = 'http://localhost:8082/wx/';
+//var WxApiRoot = 'http://localhost:8082/wx/';
 // 局域网测试使用
 //  WxApiRoot = 'http://10.1.129.68:8082/wx/';
 // 云平台部署时使用
 // var WxApiRoot = 'http://122.51.199.160:8080/wx/';
 // 云平台上线时使用
-// var WxApiRoot = 'https://wx.losey.top/wx/';
+ var WxApiRoot = 'https://wx.losey.top/wx/';
 
 module.exports = {
   IndexUrl: WxApiRoot + 'home/index', //首页数据接口
