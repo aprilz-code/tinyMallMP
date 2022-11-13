@@ -41,7 +41,7 @@
     "compileType": "miniprogram",
     "libVersion": "2.4.0",
     "appid": "wxa28eed0c6e99c578",
-    "projectname": "litemall-wx",
+    "projectname": "tinymall-wx",
     "simulatorType": "wechat",
     "simulatorPluginLibVersion": {},
     "condition": {
