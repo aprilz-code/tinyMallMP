@@ -5,7 +5,7 @@ var app = getApp();
 Page({
   data: {
     addressList: [],
-    total: 0
+  //  total: 0
   },
   onLoad: function(options) {
     // 页面初始化 options为页面跳转所带来的参数
@@ -22,8 +22,8 @@ Page({
     util.request(api.AddressList).then(function(res) {
       if (res.code === 200) {
         that.setData({
-          addressList: res.data.list,
-          total: res.data.total
+          addressList: res.data,
+  //        total: res.data.size
         });
       }
     });

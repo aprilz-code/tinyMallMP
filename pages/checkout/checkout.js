@@ -176,6 +176,7 @@ Page({
               'paySign': payParam.paySign,
               'success': function(res) {
                 console.log("支付过程成功");
+                wx.setStorageSync('tab', 2);
                 if (grouponLinkId) {
                   setTimeout(() => {
                     wx.redirectTo({
